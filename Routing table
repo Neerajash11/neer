@@ -1,0 +1,35 @@
+#include<map>
+using namespace std;
+
+Typedef int Node_Id;
+Typedef int Link_Id;
+
+#define INVALID_LINK_Id;
+
+Class Routing_Table
+
+{
+
+Typedef map<Node_Id,Link_ID>Routing_Map;
+Routing_Map m_routing_Map;
+Public:
+enum Status {FAILURE, SUCCESS};
+Void print ()
+
+{
+Routing_Map::iterator it;
+{
+Node_Id first;
+Link_Id second;
+}
+for(it=m_routing_Map.begin ();
+it!=m_routing_Map.end();it++)
+{
+printf("Node_Id=%d,Link_Id=%d\n",it->first, it->Second);
+}
+}
+
+status Add_Routing_Entry(Node_Id node_Id,Link_Id link_Id)
+{
+
+Status status;
